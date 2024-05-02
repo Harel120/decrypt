@@ -1,0 +1,60 @@
+body {
+	font-family: Arial;
+	direction: rtl;
+	padding: 5px 50px;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+button {
+	border: 1px solid green;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 25px;
+	font-weight: bold;
+	background-color: lightgreen;
+	padding: 10px 20px;
+}
+
+.text-input {
+	width: 1000px;
+	height: 300px;
+	direction: ltr;
+}
+
+.title {
+	font-weight: bolder;
+	font-size: 23px;
+}
+
+.answer {
+	font-family: rubik;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.correct {
+	color: green;
+}
+
+.incorrect {
+	color: red;
+}
+
+.dropdown-answer {
+	font-family: rubik;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.dropdown-div {
+	direction: ltr;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}

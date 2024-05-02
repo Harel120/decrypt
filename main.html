@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="main.css" />
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>מפענח הצפנה</title>
+	</head>
+	<body>
+		<main>
+			<h1>Decryption Tool</h1>
+			<label class="main-text" for="encryptedText">Enter Encrypted Text:</label
+			><br />
+			<textarea
+				id="encryptedText"
+				class="text-input"
+				rows="4"
+				cols="50"
+			></textarea
+			><br /><br />
+			<button class="decrypt-button" onclick="decrypt()">Decrypt</button
+			><br /><br />
+			<label class="main-text" for="decryptedText">Decrypted Text:</label><br />
+			<textarea
+				id="decryptedText"
+				class="text-input"
+				rows="4"
+				cols="50"
+				readonly
+			></textarea
+			><br />
+			<div class="buttons">
+				<button class="copy-button" onclick="copyDecryptedText()">Copy</button>
+				<button class="open-button" onclick="openDocumentUrl()">Open</button>
+			</div>
+			<label class="main-text" for="documentPlayerUrl"
+				>Document Player URL:</label
+			><br />
+			<textarea id="documentPlayerUrl" rows="4" cols="50" readonly></textarea
+			><br /><br />
+			<a href="answers.html"
+				><button class="next-button">Next Step ⇨</button></a
+			>
+		</main>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
