@@ -1,5 +1,12 @@
 let documentUrlDisp;
-
+const firebaseConfig = {
+  apiKey: "AIzaSyDbfLProZTLYpznzoTztxLhVcKwszsvfk4",
+  authDomain: "vcampusdecrypt.firebaseapp.com",
+  projectId: "vcampusdecrypt",
+  storageBucket: "vcampusdecrypt.appspot.com",
+  messagingSenderId: "1068153982366",
+  appId: "1:1068153982366:web:85963b878f79176be59a8f"
+};
 function dcDataByKey(encryptedText, encryptionKey) {
 	try {
 		var parsedText = CryptoJS.enc.Base64.parse(encryptedText.replace('"', ""));
