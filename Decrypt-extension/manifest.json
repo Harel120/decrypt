@@ -1,0 +1,22 @@
+{
+	"manifest_version": 3,
+	"name": "Decrypt Vcampus",
+	"version": "1.0.0",
+	"host_permissions": [
+		"https://vcampus.schools.cet.ac.il/*",
+		"https://loservices.cet.ac.il/*",
+		"https://documentservice.cet.ac.il/*",
+		"https://mvc.cet.ac.il/my/*",
+		"<all_urls>"
+	],
+	"permissions": ["webRequest", "contextMenus", "clipboardWrite", "notifications", "scripting", "tabs", "activeTab"],
+	"background": {
+		"service_worker": "background.js"
+	},
+	"web_accessible_resources": [
+		{
+			"resources": ["crypto-js.js"],
+			"matches": ["<all_urls>"]
+		}
+	]
+}
